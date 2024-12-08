@@ -1,52 +1,54 @@
 import 'package:flutter/material.dart';
-import 'package:work/const.dart';
-import 'package:work/widgets/Container_custom_widget.dart';
-import 'package:work/widgets/custom_appBar.dart';
+import 'package:google_map_app/resources/color_manager.dart';
+import 'package:google_map_app/widgets/Container_custom_widget.dart';
+import 'package:google_map_app/widgets/custom_appBar.dart';
 
-class CustomWidgetSendOffer extends StatelessWidget {
+class CustomWidgetSendOrder extends StatelessWidget {
   final List<Map<String, dynamic>> widgetData = [
     {
       'icon': Icons.touch_app,
       'text': 'UI & UX',
-      'color': SecondColor,
+      'color': ColorManager.black,
     },
     {
       'icon': Icons.ios_share,
       'text': 'IOS',
-      'color': kPrimaryColor,
+      'color': ColorManager.black,
     },
     {
       'icon': Icons.android,
       'text': 'Android',
-      'color': kPrimaryColor,
+      'color': ColorManager.black,
     },
     {
       'icon': Icons.share,
       'text': 'Markiting',
-      'color': SecondColor,
+      'color': ColorManager.black,
     },
   ];
+
+   CustomWidgetSendOrder({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppbar(
+      appBar:  CustomAppbar(
         image: 'assets/ss.png',
         icon: Icons.message,
         title: 'Send Order',
-        colorTitle: kPrimaryColor,
-        colorIcon: SecondColor,
+        colorTitle: ColorManager.gray,
+        colorIcon: ColorManager.black,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Title and Subtitle
-          const Padding(
-            padding: EdgeInsets.all(16.0),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   'Our Service',
                   style: TextStyle(
                     fontSize: 24,
@@ -54,12 +56,12 @@ class CustomWidgetSendOffer extends StatelessWidget {
                     color: Colors.black,
                   ),
                 ),
-                SizedBox(height: 4),
+                const SizedBox(height: 4),
                 Text(
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ante facilisis gravida id ut enim.',
                   style: TextStyle(
                     fontSize: 16,
-                    color: SecondColor,
+                    color: ColorManager.black,
                   ),
                 ),
               ],

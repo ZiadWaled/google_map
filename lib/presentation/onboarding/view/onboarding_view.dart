@@ -1,7 +1,10 @@
-import 'package:company_flutter/data/on_boarding_data.dart';
-import 'package:company_flutter/models/on_boarding_model.dart';
-import 'package:company_flutter/presentation/main/main_view.dart';
 import 'package:flutter/material.dart';
+import 'package:google_map_app/data/on_boarding_data.dart';
+import 'package:google_map_app/models/on_boarding_model.dart';
+import 'package:google_map_app/presentation/main/main_view.dart';
+import 'package:google_map_app/resources/color_manager.dart';
+import 'package:google_map_app/resources/constants_manager.dart';
+import 'package:google_map_app/resources/values_manager.dart';
 
 class OnBoardingPage extends StatefulWidget {
   const OnBoardingPage({super.key});

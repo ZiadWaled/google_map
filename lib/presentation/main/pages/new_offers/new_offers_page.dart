@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_map_app/presentation/main/pages/new_offers/new_offers_body.dart';
 import 'package:google_map_app/resources/color_manager.dart';
-import 'package:google_map_app/screens/new_offers_body.dart';
 import 'package:google_map_app/widgets/custom_appBar.dart';
 
 class NewOffersPage extends StatelessWidget {
@@ -16,7 +16,7 @@ class NewOffersPage extends StatelessWidget {
         colorTitle: ColorManager.primary,
         colorIcon: ColorManager.gray,
       ),
-      body: NewOffersBody(),
+      body: const NewOffersBody(),
     );
   }
 }

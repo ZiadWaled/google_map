@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:work/const.dart';
+import 'package:google_map_app/resources/color_manager.dart';
 
 class CustomOfferCard extends StatelessWidget {
   final String image;
@@ -45,7 +45,7 @@ class CustomOfferCard extends StatelessWidget {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     decoration: BoxDecoration(
-                      color: kPrimaryColor.withOpacity(0.7),
+                      color: ColorManager.black.withOpacity(0.7),
                       borderRadius: const BorderRadius.only(
                           bottomRight: Radius.circular(50)),
                     ),
@@ -73,18 +73,18 @@ class CustomOfferCard extends StatelessWidget {
                   const SizedBox(height: 16),
                   Row(
                     children: [
-                      const Icon(Icons.lock_clock, color: kPrimaryColor),
+                      Icon(Icons.lock_clock, color: ColorManager.gray),
                       const SizedBox(width: 8),
                       Text(
                         'Till $validTill',
                         style:
-                            const TextStyle(fontSize: 14, color: kPrimaryColor),
+                            TextStyle(fontSize: 14, color: ColorManager.black),
                       ),
                       const Spacer(),
-                      const Icon(Icons.phone, color: kPrimaryColor),
+                      Icon(Icons.phone, color: ColorManager.gray),
                       const SizedBox(width: 8),
-                      const Text('Take Offer',
-                          style: TextStyle(fontSize: 14, color: kPrimaryColor)),
+                       Text('Take Offer',
+                          style: TextStyle(fontSize: 14, color: ColorManager.black)),
                     ],
                   ),
                 ],

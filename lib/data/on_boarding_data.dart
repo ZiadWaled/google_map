@@ -1,4 +1,5 @@
-import 'package:company_flutter/models/on_boarding_model.dart';
+
+import 'package:google_map_app/models/on_boarding_model.dart';
 
 final List<OnBoardingModel> onBoardingPages = [
   OnBoardingModel(

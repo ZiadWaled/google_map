@@ -1,6 +1,10 @@
-import 'package:company_flutter/presentation/main/pages/home/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:company_flutter/presentation/widget/main_text.dart';
+import 'package:google_map_app/presentation/main/pages/home/home_page.dart';
+import 'package:google_map_app/presentation/main/pages/new_offers/new_offers_page.dart';
+import 'package:google_map_app/presentation/main/pages/send_order/send_order_page.dart';
+import 'package:google_map_app/resources/color_manager.dart';
+import 'package:google_map_app/resources/font_manager.dart';
+import 'package:google_map_app/resources/styles_manager.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -14,8 +18,8 @@ class _MainPageState extends State<MainPage> {
 
   final List<Widget> _pages = [
     HomePage(), 
-    const OffersPage(),
-    const SendOfferPage(),
+    const NewOffersPage(),
+    const SendOrderPage(),
   ];
 
   @override

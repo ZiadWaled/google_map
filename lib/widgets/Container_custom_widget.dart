@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:work/const.dart';
+import 'package:google_map_app/resources/color_manager.dart';
 
 class ContainerCustomWidget extends StatelessWidget {
   const ContainerCustomWidget(
@@ -21,15 +21,15 @@ class ContainerCustomWidget extends StatelessWidget {
           Icon(
             icon,
             size: 40,
-            color: usedColor, 
+            color: ColorManager.gray,
           ),
           const SizedBox(height: 8),
           Text(
             text,
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.bold,
-              color: usedColor, 
+              color: ColorManager.black,
             ),
           ),
         ],
